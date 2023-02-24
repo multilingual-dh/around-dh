@@ -7,7 +7,7 @@ ref: waves-of-words
 title: Waves of Words
 author: "Rachel Hendery"
 description: 'Exploring the extent and nature of ancient contact relationships between first peoples of the Australian and Asia-Pacific region.'
-permalink: /en/waves-of-words
+permalink: /en/waves-of-words/
 image: true
 include: false
 ---

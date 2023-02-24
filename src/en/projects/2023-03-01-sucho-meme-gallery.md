@@ -6,8 +6,8 @@ lang-ref: sucho-meme-wall
 ref: sucho-meme-wall
 title: "SUCHO Meme Wall"
 author: "Anna Rakityanskaya"
-description: "A crowdsourced transcription pilot project for Estoria de Espanna"
-permalink: /en/sucho-meme-gallery
+description: "Capturing memes from Russia's war on Ukraine."
+permalink: /en/sucho-meme-gallery/
 image: true
 include: false
 ---

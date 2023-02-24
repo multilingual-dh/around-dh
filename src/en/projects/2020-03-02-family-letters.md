@@ -7,7 +7,7 @@ ref: familyletters
 title: Family Letters
 author: "Jennifer Isasi"
 description: "Digitizing, analyzing, and publicly sharing correspondence of a Mexican American family that migrated to the states of Colorado and Nebraska in the USA."
-permalink: /en/family-letters
+permalink: /en/family-letters/
 image: true
 include: false
 ---

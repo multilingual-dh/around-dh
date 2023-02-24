@@ -7,7 +7,7 @@ ref: digital-nollywood
 title: "Digital Nollywood"
 author: "James Yeku"
 description: "Collecting and exhibiting movie posters from Old Nollywood in Nigeria."
-permalink: /en/digital-nollywood
+permalink: /en/digital-nollywood/
 image: true
 include: false
 ---

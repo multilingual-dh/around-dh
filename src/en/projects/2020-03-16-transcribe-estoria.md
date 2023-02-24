@@ -7,7 +7,7 @@ ref: transcribe-estoria
 title: "Transcribe Estoria"
 author: "Polly Duxfield and Aengus Ward"
 description: "A crowdsourced transcription pilot project for Estoria de Espanna"
-permalink: /en/transcribe-estoria
+permalink: /en/transcribe-estoria/
 image: true
 include: false
 ---

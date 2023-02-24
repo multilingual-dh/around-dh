@@ -7,7 +7,7 @@ ref: la-argentina-manuscrita
 title: "La Argentina Manuscrita"
 author: "Gimena del Rio Riande"
 description: "Creating minimal computing digital editions of the earliest written descriptions of the Rio de la Plata lands, from 17th-18th century Argentinian chronicles and travelogues."
-permalink: /en/la-argentina-manuscrita
+permalink: /en/la-argentina-manuscrita/
 image: true
 include: false
 ---
