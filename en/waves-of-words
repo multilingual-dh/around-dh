@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- charset/http-equiv/viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>
+      
+      Waves of Words
+      
+    </title>
+
+    <!-- synchronous js / schema  -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "Around DH",
+        "description": "Eleventy starter based on the workflow suggested by buildexcellentwebsit.es.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    <!-- include blogpost schema  --><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "http://localhost:8080#website"
+    },
+    "@id": "",
+    "headline": "Waves of Words",
+    "description": "Exploring the extent and nature of ancient contact relationships between first peoples of the Australian and Asia-Pacific region.",
+    "image": "http://localhost:8080/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Multilingual DH group",
+      "url": "http://localhost:8080"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Multilingual DH group"
+    },
+    "datePublished": "2020-02-17T00:00:00.000Z"
+  }
+</script>
+ 
+
+    <!-- synchronous css / inline css  -->
+    <link rel="stylesheet" href="/assets/css/global.css?60a4-08ce-0b73" />
+
+    <!-- preloads -->
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- preloads in page data -->
+    <!-- prettier-ignore -->
+    <link rel="preload"
+            href="/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2"
+            as="font"
+            type=font/woff2
+            crossorigin />
+    
+
+    <!-- defered js  -->
+    <script type="module" src="/assets/scripts/app.js?60a4-08ce-0b73" defer></script>
+
+    <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/en/waves-of-words" />
+
+<meta
+  name="description"
+  content="
+  
+  Exploring the extent and nature of ancient contact relationships between first peoples of the Australian and Asia-Pacific region.
+  
+  "
+/>
+
+<meta name="theme-color" content="#DD4462" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/en/waves-of-words" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/en/waves-of-words" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="Waves of Words"
+/>
+<meta
+  property="og:image"
+  content="http://localhost:8080/assets/images/opengraph-default.jpg
+  "
+/>
+<meta
+  property="og:description"
+  content="Exploring the extent and nature of ancient contact relationships between first peoples of the Australian and Asia-Pacific region."
+/>
+<meta property="og:site_name" content="Around DH" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Multilingual DH group" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="manifest" href="/site.webmanifest" />
+
+  </head>
+
+  <body>
+    <!-- header -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+<header class="wrapper | relative" role="banner">
+  <div class="site-head | ontop spot-color-primary">
+    
+    <a href="/" class="logo site-head__brand | no-underline" >
+
+      <img src="/assets/images/noun-globe-1232171.png"/>
+
+      Around DH
+    </a>
+
+    <nav id="mainnav" class="navbar" aria-label="Main">
+  <ul>
+    
+    <li>
+      <a
+        class="nav"
+        href="/about/"
+        
+        >About</a
+      >
+    </li>
+    
+  </ul>
+</nav>
+
+<!--  template element holding a button that needs to be injected when JavaScript is finally available. based on an article by Manuel Matuzovic, https://web.dev/website-navigation/, see also https://kittygiraudel.com/2022/09/30/templating-in-html/ -->
+
+<template id="burger-template">
+  <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+    <span>Menu</span>
+    <svg width="24" height="24" aria-hidden="true">
+      <path
+        fill-rule="evenodd"
+        d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+</template>
+
+  </div>
+</header>
+
+    <!-- content slot -->
+    <main id="main" class="flow">
+<article class="region blog">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">Waves of Words</h1>
+    
+    <time datetime="2020-02-17T00:00:00.000Z">
+  February 17, 2020
+</time>
+<br/>
+    Rachel Hendery
+    <img src ="/assets/images/waves-of-words.jpg" alt="Cover image for Waves of Words"/>
+    <h3 id="about-the-project"><a class="heading-anchor" href="#about-the-project">About the project</a></h3>
+<p>This is an Australian Research Council (ARC)-funded project to understand the extent and nature of ancient contact relationships between first peoples of the Australian and Asia-Pacific region. The research design includes two complementary sets of methods:<br>
+targeted comparative linguistic and anthropological research into shared linguistic features and cultural practices, data-driven digital modelling of linguistic, anthropological and archaeological evidence.</p>
+<p>As a result, we also expect to discover what kinds of social configurations underlie different linguistic outcomes in language contact situations; improve our understanding of the relationship between language change and sociocultural change, and develop a toolkit of methods and software for integrating linguistic, anthropological and archaeological data that can be used in other regions as well.</p>
+<p>This includes the development of a new Virtual Reality “thick mapping” platform, in partnership with stakeholders from first peoples communities, to consider less colonial and more embodied approaches to visual representation of space and time.</p>
+<h3 id="what-are-the-stakes"><a class="heading-anchor" href="#what-are-the-stakes">What are the stakes?</a></h3>
+<p>Pacific and Island Southeast Asian peoples have been involved in intense voyaging and social and cultural interaction for thousands of years. Australia did not sit alone in the middle of this busy highway; it was most likely an important part of the Pacific network, and evidence for this can be found in the linguistic, anthropological and archaeological record. Yet this evidence so far is fragmented and siloed. This project aims to right this situation using new approaches and new technologies to develop workflows, tools and platforms for bringing together and analysing these kinds of evidence.</p>
+<h3 id="what-have-you-learned-doing-this-project"><a class="heading-anchor" href="#what-have-you-learned-doing-this-project">What have you learned doing this project?</a></h3>
+<p>One of my favourite things about this project has been thinking through how we can represent space and time with these complex layers of data, in ways that go beyond traditional colonial-style maps. The main thing I’ve learned is that the Asia-Pacific region feels very different when you stop trying to view it as a static 2D map. For example, Laurent Dousset and Anne di Piazza have been doing interesting simulations of canoe travel time between islands, using historical wind and current data. Andrew Burrell and I have been experimenting with using this information to literally warp space around the user in the VR experience, so that islands that are easier to get to become closer and those that are harder to get to become more distant. This rewrites the map to represent something far more important than kilometre difference, and gives the user a sense of what the oceans mean to a canoe-voyager. We can use a similar approach to warp space according to other factors, e.g. linguistic and/or cultural similarity, patterns of archaeological finds, distribution patterns of plant or animal genetics, etc, or a weighted combination of these.</p>
+<p>Another thing I’ve learned is how important it is when working on cross- and interdisciplinary projects to take things really slowly and to look for terminological and methodological ‘bridges’ across the disciplines. There’s no point in quickly doing work together if you are talking at cross purposes and don’t trust each other’s methodologies or data. We found that mapping provides this kind of bridge for us across our disciplines. The linguists, archaeologists, anthropologists, and computer scientists on the project (and even the person with the literature background) can all easily get on the same page when it comes to discussing mapping, and this process also helps the people from each discipline understand the others’ datasets.</p>
+<p>Finally, if you are about to have to look up 800+ things manually (like the list of languages below), there’s almost certainly something different you could do instead, where even if it doesn’t achieve the exact same goal, it is just as valuable.</p>
+<h3 id="tools"><a class="heading-anchor" href="#tools">Tools</a></h3>
+<p>We have been using Python (often with Jupyter notebooks or Google’s Colab notebooks) and R for data cleaning, processing, and analysis, <a href="https://help.nla.gov.au/trove/building-with-trove/api" target="_blank" rel="noopener">the Trove API</a> for interaction with National Library data, Tensorflow for machine learning experiments, Gephi or R for network analysis, Leaflet or Google Maps for quick and dirty web mapping, Unity for VR development, Javascript with Electron for creating other desktop apps. Github for version control and code management.</p>
+<h3 id="source-material"><a class="heading-anchor" href="#source-material">Source material</a></h3>
+<p>The source material is primarily from places now known as Australia, Papua New Guinea, Indonesia, Vanuatu (and to a lesser-extent the other Pacific islands). In short, a region that is sometimes known as the ‘Coral Sea cultural interaction sphere’.</p>
+<h3 id="languages"><a class="heading-anchor" href="#languages">Language(s)</a></h3>
+<p>This project involves around 800 languages: ‘Aragùrɛ, ’Avekɛ, <a href="https://en.wikipedia.org/wiki/ISO_639:ace" target="_blank" rel="noopener">Acehnese</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:apf" target="_blank" rel="noopener">Agta</a>, Aitchin, <a href="https://en.wikipedia.org/wiki/ISO_639:nfl" target="_blank" rel="noopener">Äiwoo</a>, Ajiø, <a href="https://en.wikipedia.org/wiki/ISO_639:tsr" target="_blank" rel="noopener">Akei</a>, Aklanon, <a href="https://en.wikipedia.org/wiki/ISO_639:akt" target="_blank" rel="noopener">Akolet</a>, Alangan, Alavas, Ali, <a href="https://en.wikipedia.org/wiki/ISO_639:alp" target="_blank" rel="noopener">Alune</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:amq" target="_blank" rel="noopener">Amahai</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:aie" target="_blank" rel="noopener">Amara</a>, Ambai, <a href="https://en.wikipedia.org/wiki/ISO_639:alm" target="_blank" rel="noopener">Amblong</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ami" target="_blank" rel="noopener">Amis</a> , <a href="https://en.wikipedia.org/wiki/ISO_639:amg" target="_blank" rel="noopener">Amurdak</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:akg" target="_blank" rel="noopener">Anakalang</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bzb" target="_blank" rel="noopener">Andio</a>, Andra, <a href="https://en.wikipedia.org/wiki/ISO_639:aty" target="_blank" rel="noopener">Aneityum</a>, Anesù, Angavae, <a href="https://en.wikipedia.org/wiki/ISO_639:akb" target="_blank" rel="noopener">Angkola</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:and" target="_blank" rel="noopener">Ansus</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:aui" target="_blank" rel="noopener">Anuki</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:aud" target="_blank" rel="noopener">Anuta</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:aor" target="_blank" rel="noopener">Aore</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:app" target="_blank" rel="noopener">Apma</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:apx" target="_blank" rel="noopener">Aputai</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:akr" target="_blank" rel="noopener">Araki</a>, Are’are, <a href="https://en.wikipedia.org/wiki/ISO_639:agf" target="_blank" rel="noopener">Arguni</a>, Aria, Aro, Arop, <a href="https://en.wikipedia.org/wiki/ISO_639:aia" target="_blank" rel="noopener">Arosi</a>, Arosi, <a href="https://en.wikipedia.org/wiki/ISO_639:mah" target="_blank" rel="noopener">Arʃa</a>, Arta, <a href="https://en.wikipedia.org/wiki/ISO_639:asz" target="_blank" rel="noopener">As</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:asl" target="_blank" rel="noopener">Asilulu</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:aua" target="_blank" rel="noopener">Asumboa</a>, Atayal, <a href="https://en.wikipedia.org/wiki/ISO_639:aoz" target="_blank" rel="noopener">Atoni</a>, Atta, Auhelawa, <a href="https://en.wikipedia.org/wiki/ISO_639:aul" target="_blank" rel="noopener">Aulua</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:avb" target="_blank" rel="noopener">Avau</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tmb" target="_blank" rel="noopener">Avava</a>, Avok, <a href="https://en.wikipedia.org/wiki/ISO_639:awb" target="_blank" rel="noopener">Awa</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ahb" target="_blank" rel="noopener">Axamb</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:abp" target="_blank" rel="noopener">Ayta Abellen</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:baa" target="_blank" rel="noopener">Babatana</a>, Babatana, Babuyan, <a href="https://en.wikipedia.org/wiki/ISO_639:bzg" target="_blank" rel="noopener">Babuza</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:btr" target="_blank" rel="noopener">Baetora</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bsu" target="_blank" rel="noopener">Bahonsuai</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bdl" target="_blank" rel="noopener">Bajo</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bki" target="_blank" rel="noopener">Baki</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:blw" target="_blank" rel="noopener">Balangaw</a>, Bali-Vitu, <a href="https://en.wikipedia.org/wiki/ISO_639:wnk" target="_blank" rel="noopener">Baliledo</a>, Balinese, Baluan, Banam Bay, <a href="https://en.wikipedia.org/wiki/ISO_639:bgz" target="_blank" rel="noopener">Banggai</a> , <a href="https://en.wikipedia.org/wiki/ISO_639:bdr" target="_blank" rel="noopener">Banggi</a>, Banoni, <a href="https://en.wikipedia.org/wiki/ISO_639:bnq" target="_blank" rel="noopener">Bantik</a>, Bantoanon, Bare’e, <a href="https://en.wikipedia.org/wiki/ISO_639:bch" target="_blank" rel="noopener">Bariai</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bjk" target="_blank" rel="noopener">Barok</a>, Basay, Batak, Batangan, <a href="https://en.wikipedia.org/wiki/ISO_639:bay" target="_blank" rel="noopener">Batuley</a>, Bauro, <a href="https://en.wikipedia.org/wiki/ISO_639:bek" target="_blank" rel="noopener">Bebeli</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bed" target="_blank" rel="noopener">Bedoanas</a>, Belait, Bellona, Berawan, Besemah, Bierebo, Bieria, <a href="https://en.wikipedia.org/wiki/ISO_639:bhc" target="_blank" rel="noopener">Biga</a>, Bikol, Bilaan, Biliau, Bilibil, Bilur, <a href="https://en.wikipedia.org/wiki/ISO_639:bhp" target="_blank" rel="noopener">Bima</a>, Bintulu, Binukid, <a href="https://en.wikipedia.org/wiki/ISO_639:biq" target="_blank" rel="noopener">Bipi</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:blp" target="_blank" rel="noopener">Blablanga</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bty" target="_blank" rel="noopener">Bobot</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bnp" target="_blank" rel="noopener">Bola</a>, Bolaang Mongondow, Bolinao, <a href="https://en.wikipedia.org/wiki/ISO_639:bna" target="_blank" rel="noopener">Bonerate</a>, Bonfia, Bontok, Botolan Sambal, <a href="https://en.wikipedia.org/wiki/ISO_639:bgt" target="_blank" rel="noopener">Bughotu</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bug" target="_blank" rel="noopener">Buginese</a>, Buginese, Buhid, <a href="https://en.wikipedia.org/wiki/ISO_639:bxh" target="_blank" rel="noopener">Buhutu</a>, Bujan, <a href="https://en.wikipedia.org/wiki/ISO_639:bvk" target="_blank" rel="noopener">Bukat</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bzq" target="_blank" rel="noopener">Buli</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bjl" target="_blank" rel="noopener">Bulu</a>, Buma, <a href="https://en.wikipedia.org/wiki/ISO_639:bdd" target="_blank" rel="noopener">Bunama</a>, Bundu Dusun, <a href="https://en.wikipedia.org/wiki/ISO_639:bkz" target="_blank" rel="noopener">Bungku</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:blf" target="_blank" rel="noopener">Buol</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bvr" target="_blank" rel="noopener">Burarra</a>, Burmbar, Buru, Butmas-Tur, Butuanon, Bwaidoga, Bwaidoge, <a href="https://en.wikipedia.org/wiki/ISO_639:bwa" target="_blank" rel="noopener">Bwatoo</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:msq" target="_blank" rel="noopener">Caac</a>, Caluyanun, camuki, Capisano, <a href="https://en.wikipedia.org/wiki/ISO_639:cal" target="_blank" rel="noopener">Carolinian</a>, Cebuano, Central Maewo, Central Masela, <a href="https://en.wikipedia.org/wiki/ISO_639:cha" target="_blank" rel="noopener">Chamorro</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mrn" target="_blank" rel="noopener">Cheke Holo</a>, Chru, <a href="https://en.wikipedia.org/wiki/ISO_639:chk" target="_blank" rel="noopener">Chuukese</a>, Ciri, Cuyonon, Daakaka, Dadu’a, <a href="https://en.wikipedia.org/wiki/ISO_639:dij" target="_blank" rel="noopener">Dai</a>, Darwin English, <a href="https://en.wikipedia.org/wiki/ISO_639:dww" target="_blank" rel="noopener">Dawawa</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ddw" target="_blank" rel="noopener">Dawera-Daweloor</a>, Dayak Bakatiq-Sara, Dayak Ngaju, Dehu, Diodio, <a href="https://en.wikipedia.org/wiki/ISO_639:dix" target="_blank" rel="noopener">Dixon Reef</a>, Dobel, <a href="https://en.wikipedia.org/wiki/ISO_639:dob" target="_blank" rel="noopener">Dobu</a>, Dobuan, <a href="https://en.wikipedia.org/wiki/ISO_639:dor" target="_blank" rel="noopener">Dori’o</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:wwo" target="_blank" rel="noopener">Dorig</a>, Doura, <a href="https://en.wikipedia.org/wiki/ISO_639:duf" target="_blank" rel="noopener">Drubea</a>, Dumagat, Dunk Island, Dupaningan Agta, <a href="https://en.wikipedia.org/wiki/ISO_639:dsn" target="_blank" rel="noopener">Dusner</a>, Dusun Tuhauon, East Ambae, East Damar, <a href="https://en.wikipedia.org/wiki/ISO_639:fud" target="_blank" rel="noopener">East Futuna</a>, East Kara, East Masela, East Mekeo, East Sumbanese Kambera, East Uvea, Eastern Bontok, Eastern Ngad’a, Elat, <a href="https://en.wikipedia.org/wiki/ISO_639:mmw" target="_blank" rel="noopener">Emae</a>, Emae, <a href="https://en.wikipedia.org/wiki/ISO_639:emw" target="_blank" rel="noopener">Emplawas</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:end" target="_blank" rel="noopener">Ende</a>, Enfitena, <a href="https://en.wikipedia.org/wiki/ISO_639:eno" target="_blank" rel="noopener">Enggano</a>, Erai, <a href="https://en.wikipedia.org/wiki/ISO_639:erw" target="_blank" rel="noopener">Erokwanas</a>, Espiegels’ Bay, <a href="https://en.wikipedia.org/wiki/ISO_639:etn" target="_blank" rel="noopener">Eton</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:faf" target="_blank" rel="noopener">Fagani</a>, Fatakai, <a href="https://en.wikipedia.org/wiki/ISO_639:far" target="_blank" rel="noopener">Fataleka</a>, Favorlang, Favorlang, Fifti, Fijian, Fila, <a href="https://en.wikipedia.org/wiki/ISO_639:frd" target="_blank" rel="noopener">Fordata</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:frt" target="_blank" rel="noopener">Fortsenal</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:fut" target="_blank" rel="noopener">Futuna-Aniwa</a>, Gabadi, Gaddang, Galolen, <a href="https://en.wikipedia.org/wiki/ISO_639:gzn" target="_blank" rel="noopener">Gane</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:pwg" target="_blank" rel="noopener">Gapapaiwa</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ilg" target="_blank" rel="noopener">Garig</a>, Gaura Nggaura, <a href="https://en.wikipedia.org/wiki/ISO_639:gay" target="_blank" rel="noopener">Gayo</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:gdd" target="_blank" rel="noopener">Gedaged</a>, Geser, <a href="https://en.wikipedia.org/wiki/ISO_639:ghn" target="_blank" rel="noopener">Ghanongga</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:gri" target="_blank" rel="noopener">Ghari</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:bmk" target="_blank" rel="noopener">Ghayavi</a>, Gimán, <a href="https://en.wikipedia.org/wiki/ISO_639:ggt" target="_blank" rel="noopener">Gitua</a>, Gorontalo, Guiangan, <a href="https://en.wikipedia.org/wiki/ISO_639:gvs" target="_blank" rel="noopener">Gumawana</a>, Hainan Cham, Haku, Halia, Ham, Hanunoo, Hanunoo, <a href="https://en.wikipedia.org/wiki/ISO_639:hvk" target="_blank" rel="noopener">Haveke</a>, Hawaiian, <a href="https://en.wikipedia.org/wiki/ISO_639:ham" target="_blank" rel="noopener">Hewa</a>, Hiligaynon, Hitu, <a href="https://en.wikipedia.org/wiki/ISO_639:hiw" target="_blank" rel="noopener">Hiw</a>, ʰMoavekɛ, Hoanya, <a href="https://en.wikipedia.org/wiki/ISO_639:hoa" target="_blank" rel="noopener">Hoava</a>, Hote, Houaïlou, <a href="https://en.wikipedia.org/wiki/ISO_639:hul" target="_blank" rel="noopener">Hula</a>, Hus, <a href="https://en.wikipedia.org/wiki/ISO_639:iai" target="_blank" rel="noopener">Iaai</a>, Iai, <a href="https://en.wikipedia.org/wiki/ISO_639:yml" target="_blank" rel="noopener">Iamalele</a>, Ibaloi, Iban, Ibanag, Ida’an, <a href="https://en.wikipedia.org/wiki/ISO_639:viv" target="_blank" rel="noopener">Iduna</a>, Ifira-Mele, Ifugao, Ikiti, Ikiyau, Iliun, Ilokano, Ilonggo, Ilongot, Imorod, Imreang, <a href="https://en.wikipedia.org/wiki/ISO_639:imr" target="_blank" rel="noopener">Imroing</a>, Inabaknon, Inati, <a href="https://en.wikipedia.org/wiki/ISO_639:ind" target="_blank" rel="noopener">Indonesian</a>, Inibaloi, Inonhan, Iranun, Iraralay, <a href="https://en.wikipedia.org/wiki/ISO_639:irh" target="_blank" rel="noopener">Irarutu</a>, Iraya, Isamorong, Isinay, Isneg, Itawis, Itbayat, Itbayaten, Itneg, Ivasay, Ivatan, <a href="https://en.wikipedia.org/wiki/ISO_639:ibd" target="_blank" rel="noopener">Iwaidja</a>, Jambi Malay, Jarai, <a href="https://en.wikipedia.org/wiki/ISO_639:jav" target="_blank" rel="noopener">Javanese</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:jaz" target="_blank" rel="noopener">Jawe</a>, Jiriw, ʝalasu, Kadazan Dusun, Kadorih, Kagayanen, <a href="https://en.wikipedia.org/wiki/ISO_639:agw" target="_blank" rel="noopener">Kahua</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kzp" target="_blank" rel="noopener">Kaidipang</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kxa" target="_blank" rel="noopener">Kairiru</a>, Kaisabu, Kakiduge:n Ilongot, <a href="https://en.wikipedia.org/wiki/ISO_639:kcl" target="_blank" rel="noopener">Kala</a>, Kalagan, Kallahan, Kamayo, <a href="https://en.wikipedia.org/wiki/ISO_639:xbr" target="_blank" rel="noopener">Kambera</a>, Kambowa, Kanakanabu, <a href="https://en.wikipedia.org/wiki/ISO_639:kqw" target="_blank" rel="noopener">Kandas</a>, Kankanaey, Kapampangan, <a href="https://en.wikipedia.org/wiki/ISO_639:kpg" target="_blank" rel="noopener">Kapingamarangi</a>, Kapone, Kara, Karo Batak, Katbol, Katingan, Kaulong, Kavalan LTs, <a href="https://en.wikipedia.org/wiki/ISO_639:kgb" target="_blank" rel="noopener">Kawe</a>, Kayan, Kayardild, Kayupulau, <a href="https://en.wikipedia.org/wiki/ISO_639:kzk" target="_blank" rel="noopener">Kazukuru</a>, Kédang, Kei, Kelabit, Kemak, Kenyah, Keppel Island, <a href="https://en.wikipedia.org/wiki/ISO_639:kvr" target="_blank" rel="noopener">Kerinci</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kij" target="_blank" rel="noopener">Kilivila</a>, Kilokaka, Kinaray-a, <a href="https://en.wikipedia.org/wiki/ISO_639:ues" target="_blank" rel="noopener">Kioko</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:gil" target="_blank" rel="noopener">Kiribati</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kis" target="_blank" rel="noopener">Kis</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kje" target="_blank" rel="noopener">Kisar</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:vko" target="_blank" rel="noopener">Kodeoha</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kod" target="_blank" rel="noopener">Kodi</a>, Koiwai, <a href="https://en.wikipedia.org/wiki/ISO_639:kkk" target="_blank" rel="noopener">Kokota</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kvv" target="_blank" rel="noopener">Kola</a>, Kolowawa, <a href="https://en.wikipedia.org/wiki/ISO_639:klx" target="_blank" rel="noopener">Koluwawa</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kge" target="_blank" rel="noopener">Komering</a>, Komering, <a href="https://en.wikipedia.org/wiki/ISO_639:krf" target="_blank" rel="noopener">Koro</a>, Koronadal Blaan, <a href="https://en.wikipedia.org/wiki/ISO_639:xkq" target="_blank" rel="noopener">Koroni</a>, Koumac, <a href="https://en.wikipedia.org/wiki/ISO_639:kvc" target="_blank" rel="noopener">Kove</a>, Kubokota, Kuku-Yalanji, <a href="https://en.wikipedia.org/wiki/ISO_639:vkl" target="_blank" rel="noopener">Kulisusu</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:xks" target="_blank" rel="noopener">Kumbewaha</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:kse" target="_blank" rel="noopener">Kuni</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ksg" target="_blank" rel="noopener">Kusaghe</a>, Kwai, <a href="https://en.wikipedia.org/wiki/ISO_639:kwd" target="_blank" rel="noopener">Kwaio</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tnk" target="_blank" rel="noopener">Kwamera</a>, Kwara’ae, <a href="https://en.wikipedia.org/wiki/ISO_639:lbb" target="_blank" rel="noopener">Label</a>, Labo, Laganyan, Laghu, Lahanan, Lahat, Lakalai, Lakona, <a href="https://en.wikipedia.org/wiki/ISO_639:nrz" target="_blank" rel="noopener">Lala</a>, Lamaholot Ile Mandiri, Lamalera, <a href="https://en.wikipedia.org/wiki/ISO_639:lmy" target="_blank" rel="noopener">Lamboya</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:lmu" target="_blank" rel="noopener">Lamenu</a>, Lamogai, Lampung, Lampung Api, Lampung Nyo, Langalanga, Lapwangtoai, <a href="https://en.wikipedia.org/wiki/ISO_639:lrv" target="_blank" rel="noopener">Larevat</a>, Larrakia, <a href="https://en.wikipedia.org/wiki/ISO_639:llu" target="_blank" rel="noopener">Lau</a>, Lau, Lebei, <a href="https://en.wikipedia.org/wiki/ISO_639:tql" target="_blank" rel="noopener">Lehali</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:lek" target="_blank" rel="noopener">Leipon</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:lpa" target="_blank" rel="noopener">Lelepa</a>, Lelepa, <a href="https://en.wikipedia.org/wiki/ISO_639:lrz" target="_blank" rel="noopener">Lemerig</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tnl" target="_blank" rel="noopener">Lenakel</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:lgr" target="_blank" rel="noopener">Lengo</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:nms" target="_blank" rel="noopener">Letemboi</a>, Letemboi, Letinese, Levei, Lihir, <a href="https://en.wikipedia.org/wiki/ISO_639:lib" target="_blank" rel="noopener">Likum</a>, Lio, <a href="https://en.wikipedia.org/wiki/ISO_639:lzl" target="_blank" rel="noopener">Litzlitz</a>, Lom, <a href="https://en.wikipedia.org/wiki/ISO_639:lgu" target="_blank" rel="noopener">Longgu</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:los" target="_blank" rel="noopener">Loniu</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:crc" target="_blank" rel="noopener">Lonwolwol</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:lnn" target="_blank" rel="noopener">Lorediakarkar</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:loj" target="_blank" rel="noopener">Lou</a>, Low Malay, <a href="https://en.wikipedia.org/wiki/ISO_639:urr" target="_blank" rel="noopener">Löyöp</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:lex" target="_blank" rel="noopener">Luang</a>, Luangiua, Lundayeh, Lunga Lunga, <a href="https://en.wikipedia.org/wiki/ISO_639:lga" target="_blank" rel="noopener">Lungga</a>, Lup, Luqa, Lwepe, <a href="https://en.wikipedia.org/wiki/ISO_639:mhy" target="_blank" rel="noopener">Ma’anyan</a>, Maˈya, <a href="https://en.wikipedia.org/wiki/ISO_639:mmx" target="_blank" rel="noopener">Madak</a>, Madak, Madara, Madurese, <a href="https://en.wikipedia.org/wiki/ISO_639:mme" target="_blank" rel="noopener">Mae</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mkv" target="_blank" rel="noopener">Mafea</a>, Magori, Maguindanaon, <a href="https://en.wikipedia.org/wiki/ISO_639:mmm" target="_blank" rel="noopener">Maii</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mbq" target="_blank" rel="noopener">Maisin</a>, Makassar, <a href="https://en.wikipedia.org/wiki/ISO_639:mak" target="_blank" rel="noopener">Makassarese</a>, Malagasy, <a href="https://en.wikipedia.org/wiki/ISO_639:mmt" target="_blank" rel="noopener">Malalamai</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mln" target="_blank" rel="noopener">Malango</a>, Malasanga, Malaweg, <a href="https://en.wikipedia.org/wiki/ISO_639:zsm" target="_blank" rel="noopener">Malay</a>, Malay, Maleu, Malo, Malo, Maloh, <a href="https://en.wikipedia.org/wiki/ISO_639:mll" target="_blank" rel="noopener">Malua Bay</a>, Mamanwa, Mambai, <a href="https://en.wikipedia.org/wiki/ISO_639:mvd" target="_blank" rel="noopener">Mamboru</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mva" target="_blank" rel="noopener">Manam</a>, Mandri, Mangap-Mbula, <a href="https://en.wikipedia.org/wiki/ISO_639:mrv" target="_blank" rel="noopener">Mangareva</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mqy" target="_blank" rel="noopener">Manggarai</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mbh" target="_blank" rel="noopener">Mangseng</a>, Manide, Manihiki, Manobo, Mansaka, <a href="https://en.wikipedia.org/wiki/ISO_639:mri" target="_blank" rel="noopener">Maori</a>, Mapun, <a href="https://en.wikipedia.org/wiki/ISO_639:mrs" target="_blank" rel="noopener">Maragus</a>, Maranao, Marau, <a href="https://en.wikipedia.org/wiki/ISO_639:mhg" target="_blank" rel="noopener">Margu</a>, Marinduque Tagalog, Maringe, <a href="https://en.wikipedia.org/wiki/ISO_639:mrb" target="_blank" rel="noopener">Marino</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mvo" target="_blank" rel="noopener">Marovo</a>, Marquesan, Marra, Marshallese, Masbatenyo, <a href="https://en.wikipedia.org/wiki/ISO_639:bnf" target="_blank" rel="noopener">Masiwang</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:klv" target="_blank" rel="noopener">Maskelynes</a>, Mato, <a href="https://en.wikipedia.org/wiki/ISO_639:mjk" target="_blank" rel="noopener">Matukar</a>, Maututu, <a href="https://en.wikipedia.org/wiki/ISO_639:mph" target="_blank" rel="noopener">Mawng</a>, Mbaelelea, Mbaengguu, Mbareke, ᵐBelep, Mbirao, ᵐBoewe, ᵐBonⁿde, Mbughotu, Mbunai, Mbwenelang, Megiar, <a href="https://en.wikipedia.org/wiki/ISO_639:mek" target="_blank" rel="noopener">Mekeo</a>, Melanau, Mele, <a href="https://en.wikipedia.org/wiki/ISO_639:mee" target="_blank" rel="noopener">Mengen</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mwv" target="_blank" rel="noopener">Mentawai</a>, Mentawai, <a href="https://en.wikipedia.org/wiki/ISO_639:mxm" target="_blank" rel="noopener">Meramera</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:lmb" target="_blank" rel="noopener">Merei</a>, Merina, <a href="https://en.wikipedia.org/wiki/ISO_639:min" target="_blank" rel="noopener">Minangkabau</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mvn" target="_blank" rel="noopener">Minaveha</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mpn" target="_blank" rel="noopener">Mindiri</a>, Mindoro Tagalog, Minyaifuin, Misima, <a href="https://en.wikipedia.org/wiki/ISO_639:mxd" target="_blank" rel="noopener">Modang</a>, Moeneᵐbeŋ, Mokaren, Moken, <a href="https://en.wikipedia.org/wiki/ISO_639:mox" target="_blank" rel="noopener">Molima</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mte" target="_blank" rel="noopener">Mono</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mhz" target="_blank" rel="noopener">Mor</a>, Mori, Mori Bawah, <a href="https://en.wikipedia.org/wiki/ISO_639:mqn" target="_blank" rel="noopener">Moronene</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:mrp" target="_blank" rel="noopener">Morouas</a>, Mortlockese, <a href="https://en.wikipedia.org/wiki/ISO_639:mtt" target="_blank" rel="noopener">Mota</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:meu" target="_blank" rel="noopener">Motu</a>, Mouk, <a href="https://en.wikipedia.org/wiki/ISO_639:mvt" target="_blank" rel="noopener">Mpotovoro</a>, Mumeng, Muna, Murnaten, Mussau, <a href="https://en.wikipedia.org/wiki/ISO_639:tuc" target="_blank" rel="noopener">Mutu</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:myw" target="_blank" rel="noopener">Muyuw</a>, Mwerlap, <a href="https://en.wikipedia.org/wiki/ISO_639:mlv" target="_blank" rel="noopener">Mwotlap</a>, Na:ti, Na’ahai, Na’ahai, <a href="https://en.wikipedia.org/wiki/ISO_639:nxe" target="_blank" rel="noopener">Nage</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:sns" target="_blank" rel="noopener">Nahavaq</a>, Najit, Nakanai, <a href="https://en.wikipedia.org/wiki/ISO_639:nal" target="_blank" rel="noopener">Nalik</a>, Namakir, Namakura, Naman, Nanggu, Nanumea, <a href="https://en.wikipedia.org/wiki/ISO_639:nrg" target="_blank" rel="noopener">Narango</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:nsy" target="_blank" rel="noopener">Nasal</a>, Nasarian, Nasvang, Natangan, Nāti, Naueti, <a href="https://en.wikipedia.org/wiki/ISO_639:ncn" target="_blank" rel="noopener">Nauna</a>, Nauru, <a href="https://en.wikipedia.org/wiki/ISO_639:nsw" target="_blank" rel="noopener">Navut</a>, Navwien, ⁿDe’u, Nduke, ⁿDuᵐbea, <a href="https://en.wikipedia.org/wiki/ISO_639:nsn" target="_blank" rel="noopener">Nehan</a>, Nehan Hape, <a href="https://en.wikipedia.org/wiki/ISO_639:nek" target="_blank" rel="noopener">Neku</a>, Nêlêmwa, Nembao, Nenaya, Nenema, <a href="https://en.wikipedia.org/wiki/ISO_639:nen" target="_blank" rel="noopener">Nengone</a>, Nese, Nese, <a href="https://en.wikipedia.org/wiki/ISO_639:vnm" target="_blank" rel="noopener">Neve’ei</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:lgk" target="_blank" rel="noopener">Neverver</a>, Nɛmi, Ngadha, Ngaibor, Nggao, Nggela, Nguna, <a href="https://en.wikipedia.org/wiki/ISO_639:nia" target="_blank" rel="noopener">Nias</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:nil" target="_blank" rel="noopener">Nila</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:nmw" target="_blank" rel="noopener">Nimoa</a>, Ninde, Ninigo, Nissan, Nisvai, Nitita, <a href="https://en.wikipedia.org/wiki/ISO_639:num" target="_blank" rel="noopener">Niuafo’ou</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:niu" target="_blank" rel="noopener">Niue</a>, Njada, <a href="https://en.wikipedia.org/wiki/ISO_639:nkk" target="_blank" rel="noopener">Nokuku</a>, Nombotkote, North Ambrym, North Babar, North Efate, <a href="https://en.wikipedia.org/wiki/ISO_639:tnn" target="_blank" rel="noopener">North Tanna</a>, North-West Mekeo, Northern Roglai, <a href="https://en.wikipedia.org/wiki/ISO_639:ncf" target="_blank" rel="noopener">Notsi</a>, Novol, Nukeria, <a href="https://en.wikipedia.org/wiki/ISO_639:nkr" target="_blank" rel="noopener">Nukuoro</a>, Numbami, <a href="https://en.wikipedia.org/wiki/ISO_639:tgs" target="_blank" rel="noopener">Nume</a>, Numfor, Nunggubuyu, <a href="https://en.wikipedia.org/wiki/ISO_639:yly" target="_blank" rel="noopener">Nyelâyu</a>, Nyelâyu, <a href="https://en.wikipedia.org/wiki/ISO_639:lid" target="_blank" rel="noopener">Nyindrou</a>, ɲua, Ogan, Orkon, <a href="https://en.wikipedia.org/wiki/ISO_639:ora" target="_blank" rel="noopener">Oroha</a>, Oyaoya, Paama, Paamese, <a href="https://en.wikipedia.org/wiki/ISO_639:pdo" target="_blank" rel="noopener">Padoe</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:pri" target="_blank" rel="noopener">Paicî</a>, Paiwan, Pak, <a href="https://en.wikipedia.org/wiki/ISO_639:pau" target="_blank" rel="noopener">Palauan</a>, Palawan Batak, Palembang Malay, Palmer River, Palu’e, Pangasinan, Pangkumu, <a href="https://en.wikipedia.org/wiki/ISO_639:pat" target="_blank" rel="noopener">Papitalai</a>, Papora, Paser, Pat̪i, <a href="https://en.wikipedia.org/wiki/ISO_639:gfk" target="_blank" rel="noopener">Patpatar</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:plh" target="_blank" rel="noopener">Paulohi</a>, Pazih, <a href="https://en.wikipedia.org/wiki/ISO_639:pnh" target="_blank" rel="noopener">Penrhyn</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:wet" target="_blank" rel="noopener">Perai</a>, Peterara, Phan Rang Cham, <a href="https://en.wikipedia.org/wiki/ISO_639:ptr" target="_blank" rel="noopener">Piamatsina</a>, Pingilapese, Pinje, Pitilu, Piva, Poai, Poamei, Poapoã, <a href="https://en.wikipedia.org/wiki/ISO_639:plb" target="_blank" rel="noopener">Polonombauk</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ncc" target="_blank" rel="noopener">Ponam</a>, Ponapean, Pondok, <a href="https://en.wikipedia.org/wiki/ISO_639:pns" target="_blank" rel="noopener">Ponosakan</a>, Popalia, <a href="https://en.wikipedia.org/wiki/ISO_639:psw" target="_blank" rel="noopener">Port Sandwich</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ptv" target="_blank" rel="noopener">Port Vato</a>, Portuguese, <a href="https://en.wikipedia.org/wiki/ISO_639:pkp" target="_blank" rel="noopener">Pukapuka</a>, Pulo Anna, Punan Kelai, Puyuma, Pwapwâ, Ra’ivavae, Raga, <a href="https://en.wikipedia.org/wiki/ISO_639:rai" target="_blank" rel="noopener">Ramoaaina</a>, Rano, <a href="https://en.wikipedia.org/wiki/ISO_639:ray" target="_blank" rel="noopener">Rapa</a>, Rapanui, <a href="https://en.wikipedia.org/wiki/ISO_639:rar" target="_blank" rel="noopener">Rarotongan</a>, Ratagnon, <a href="https://en.wikipedia.org/wiki/ISO_639:rwa" target="_blank" rel="noopener">Rawo</a>, Rejang Rejang, Rennellese, Repanbitipmbangir, <a href="https://en.wikipedia.org/wiki/ISO_639:pgk" target="_blank" rel="noopener">Rerep</a>, Rhade, <a href="https://en.wikipedia.org/wiki/ISO_639:rri" target="_blank" rel="noopener">Ririo</a>, Riwo, Roinji, <a href="https://en.wikipedia.org/wiki/ISO_639:rmm" target="_blank" rel="noopener">Roma</a>, Romblon, <a href="https://en.wikipedia.org/wiki/ISO_639:rnn" target="_blank" rel="noopener">Roon</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:rga" target="_blank" rel="noopener">Roria</a>, Roro, Roti, <a href="https://en.wikipedia.org/wiki/ISO_639:rtm" target="_blank" rel="noopener">Rotuman</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:rug" target="_blank" rel="noopener">Roviana</a>, Rukai, Rurutuan, S.W. Palawano, <a href="https://en.wikipedia.org/wiki/ISO_639:sax" target="_blank" rel="noopener">Sa</a>, Sa, <a href="https://en.wikipedia.org/wiki/ISO_639:apb" target="_blank" rel="noopener">Sa’a</a>, Sa’a, Saaroa, Saisiyat, <a href="https://en.wikipedia.org/wiki/ISO_639:sku" target="_blank" rel="noopener">Sakao</a>, Sakizaya, Salang, <a href="https://en.wikipedia.org/wiki/ISO_639:sbe" target="_blank" rel="noopener">Saliba</a>, Sama, Samal, Sambal, <a href="https://en.wikipedia.org/wiki/ISO_639:smo" target="_blank" rel="noopener">Samoan</a>, Sangil, Sangir, Santa Ana, Santa Catalina, Sarangani Blaan, <a href="https://en.wikipedia.org/wiki/ISO_639:sas" target="_blank" rel="noopener">Sasak</a>, Savu, <a href="https://en.wikipedia.org/wiki/ISO_639:szw" target="_blank" rel="noopener">Sawai</a>, Seediq, <a href="https://en.wikipedia.org/wiki/ISO_639:ssg" target="_blank" rel="noopener">Seimat</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:skz" target="_blank" rel="noopener">Sekar</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ske" target="_blank" rel="noopener">Seke</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:slu" target="_blank" rel="noopener">Selaru</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:sly" target="_blank" rel="noopener">Selayar</a>, Sengga, <a href="https://en.wikipedia.org/wiki/ISO_639:ssz" target="_blank" rel="noopener">Sengseng</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:sve" target="_blank" rel="noopener">Serili</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:srw" target="_blank" rel="noopener">Serua</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:seu" target="_blank" rel="noopener">Serui-Laut</a>, Sewa, <a href="https://en.wikipedia.org/wiki/ISO_639:ssv" target="_blank" rel="noopener">Shark Bay</a>, Siar, <a href="https://en.wikipedia.org/wiki/ISO_639:erg" target="_blank" rel="noopener">Sie</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ski" target="_blank" rel="noopener">Sika</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:sky" target="_blank" rel="noopener">Sikaiana</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:sbb" target="_blank" rel="noopener">Simbo</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:smr" target="_blank" rel="noopener">Simeulue</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:snc" target="_blank" rel="noopener">Sinaugoro</a>, Sinaugoro, Sinauna, Singhi, Siŋorakai, <a href="https://en.wikipedia.org/wiki/ISO_639:xsi" target="_blank" rel="noopener">Sio</a>, Siraya, Sirehë, Sisingga, Sissano, Sivisa Titan, Siviti, <a href="https://en.wikipedia.org/wiki/ISO_639:ssq" target="_blank" rel="noopener">So’a</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:sob" target="_blank" rel="noopener">Sobei</a>, Soboyo, Sogodnin, <a href="https://en.wikipedia.org/wiki/ISO_639:sol" target="_blank" rel="noopener">Solos</a>, Sori, Sou Amana Teru, South Efate, South Efate, South-East Babar, Southeast Ambrym, Southern Bunun, Southern Kalinga, <a href="https://en.wikipedia.org/wiki/ISO_639:nwi" target="_blank" rel="noopener">Southwest Tanna</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:sww" target="_blank" rel="noopener">Sowa</a>, ßatarxobu, <a href="https://en.wikipedia.org/wiki/ISO_639:swp" target="_blank" rel="noopener">Suau</a>, Subanon, Subanun, <a href="https://en.wikipedia.org/wiki/ISO_639:tgo" target="_blank" rel="noopener">Sudest</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:smw" target="_blank" rel="noopener">Sumbawa</a>, Sundanese, Surigaonon, <a href="https://en.wikipedia.org/wiki/ISO_639:sgz" target="_blank" rel="noopener">Sursurunga</a>, Sye, Taba, Tabar, Tadyawan, Tae’, Tagabili, Tagalog, Tagbanwa, Tahitian, Taiof, <a href="https://en.wikipedia.org/wiki/ISO_639:tbc" target="_blank" rel="noopener">Takia</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tlr" target="_blank" rel="noopener">Talise</a>, Talise, <a href="https://en.wikipedia.org/wiki/ISO_639:tlk" target="_blank" rel="noopener">Taloki</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tls" target="_blank" rel="noopener">Tambotalo</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tmy" target="_blank" rel="noopener">Tami</a>, Tandaganon, <a href="https://en.wikipedia.org/wiki/ISO_639:tnx" target="_blank" rel="noopener">Tanema</a>, Tangga, <a href="https://en.wikipedia.org/wiki/ISO_639:tgp" target="_blank" rel="noopener">Tangoa</a>, Tanimbili, Taokas, Tape, Tarangan Barat, <a href="https://en.wikipedia.org/wiki/ISO_639:tpf" target="_blank" rel="noopener">Tarpia</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tmt" target="_blank" rel="noopener">Tasmate</a>, Tausug, <a href="https://en.wikipedia.org/wiki/ISO_639:tbo" target="_blank" rel="noopener">Tawala</a>, Tawaroga, Tboli, <a href="https://en.wikipedia.org/wiki/ISO_639:tkw" target="_blank" rel="noopener">Teanu</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tvm" target="_blank" rel="noopener">Tela-Masbuar</a>, Tengger, <a href="https://en.wikipedia.org/wiki/ISO_639:tio" target="_blank" rel="noopener">Teop</a>, Tesmbol, Tetun Fehan, Teun, Thao, <a href="https://en.wikipedia.org/wiki/ISO_639:mnl" target="_blank" rel="noopener">Tiale</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tbj" target="_blank" rel="noopener">Tiang</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tgc" target="_blank" rel="noopener">Tigak</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tkp" target="_blank" rel="noopener">Tikopia</a>, Timbembe, Timugon, Tirax, Tiruray, Tiwi, To’ambaita, Toba Batak, <a href="https://en.wikipedia.org/wiki/ISO_639:tti" target="_blank" rel="noopener">Tobati</a>, Toga, Tokodede, Tolai, <a href="https://en.wikipedia.org/wiki/ISO_639:lbw" target="_blank" rel="noopener">Tolaki</a>, Tolo, <a href="https://en.wikipedia.org/wiki/ISO_639:tlm" target="_blank" rel="noopener">Tolomako</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tdi" target="_blank" rel="noopener">Tomadino</a>, Tomini, <a href="https://en.wikipedia.org/wiki/ISO_639:ton" target="_blank" rel="noopener">Tongan</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:txs" target="_blank" rel="noopener">Tonsea</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tnt" target="_blank" rel="noopener">Tontemboan</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:ttu" target="_blank" rel="noopener">Torau</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:txe" target="_blank" rel="noopener">Totoli</a>, Tsou, Tuamotu, Tubetube, <a href="https://en.wikipedia.org/wiki/ISO_639:tzn" target="_blank" rel="noopener">Tugun</a>, Tulu, Tungag, <a href="https://en.wikipedia.org/wiki/ISO_639:tjg" target="_blank" rel="noopener">Tunjung</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tmi" target="_blank" rel="noopener">Tutuba</a>, Tuvalu, <a href="https://en.wikipedia.org/wiki/ISO_639:ubr" target="_blank" rel="noopener">Ubir</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:uge" target="_blank" rel="noopener">Ughele</a>, Ujir, <a href="https://en.wikipedia.org/wiki/ISO_639:uli" target="_blank" rel="noopener">Ulithian</a>, Uliveo, Uma, Umar, <a href="https://en.wikipedia.org/wiki/ISO_639:onu" target="_blank" rel="noopener">Unua</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:uro" target="_blank" rel="noopener">Ura</a>, Urak Lawoi’, Uripiv, Uripiv-Wala-Rano-Atchin, <a href="https://en.wikipedia.org/wiki/ISO_639:urv" target="_blank" rel="noopener">Uruava</a>, Utudnon, V’ënen Taut, <a href="https://en.wikipedia.org/wiki/ISO_639:piv" target="_blank" rel="noopener">Vaeakau-Taumako</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:tva" target="_blank" rel="noopener">Vaghua</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:vlp" target="_blank" rel="noopener">Valpei</a>, Valpei, <a href="https://en.wikipedia.org/wiki/ISO_639:mpr" target="_blank" rel="noopener">Vangunu</a>, Vano, <a href="https://en.wikipedia.org/wiki/ISO_639:vao" target="_blank" rel="noopener">Vao</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:vrs" target="_blank" rel="noopener">Varisi</a>, Vera’a, Vilirupu, <a href="https://en.wikipedia.org/wiki/ISO_639:wiv" target="_blank" rel="noopener">Vitu</a>, Vovo, <a href="https://en.wikipedia.org/wiki/ISO_639:vnp" target="_blank" rel="noopener">Vunapu</a>, Vurës, <a href="https://en.wikipedia.org/wiki/ISO_639:wab" target="_blank" rel="noopener">Wab</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:wlr" target="_blank" rel="noopener">Wailapa</a>, Waima’a, Wakole, Wala, Wamoaŋ, <a href="https://en.wikipedia.org/wiki/ISO_639:lbq" target="_blank" rel="noopener">Wampar</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:wad" target="_blank" rel="noopener">Wandamen</a>, Waray-Waray, Warndarang, <a href="https://en.wikipedia.org/wiki/ISO_639:wrp" target="_blank" rel="noopener">Waropen</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:wru" target="_blank" rel="noopener">Waru</a>, Wasambua, <a href="https://en.wikipedia.org/wiki/ISO_639:wah" target="_blank" rel="noopener">Watubela</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:wuy" target="_blank" rel="noopener">Wauyai</a>, <a href="https://en.wikipedia.org/wiki/ISO_639:wow" target="_blank" rel="noopener">Wawonii</a>, Wayan, <a href="https://en.wikipedia.org/wiki/ISO_639:wed" target="_blank" rel="noopener">Wedau</a>, Werinama, West Ambae, West Damar, Western Bukidnon Manobo, Western Cham, Western Fijian, Wetamut, Wetan, Wewewa, Whitesands, Wiau, Windesi Wandamen, <a href="https://en.wikipedia.org/wiki/ISO_639:woc" target="_blank" rel="noopener">Wogeo</a>, Woleai, <a href="https://en.wikipedia.org/wiki/ISO_639:wlo" target="_blank" rel="noopener">Wolio</a>, Wolowa, Wuna, Wusi, Wuvulu, <a href="https://en.wikipedia.org/wiki/ISO_639:jae" target="_blank" rel="noopener">Yabem</a>, Yakan, <a href="https://en.wikipedia.org/wiki/ISO_639:jmd" target="_blank" rel="noopener">Yamdena</a>, Yami, <a href="https://en.wikipedia.org/wiki/ISO_639:yap" target="_blank" rel="noopener">Yapese</a>, yello, Yerisiam, Yogad, Yogya, <a href="https://en.wikipedia.org/wiki/ISO_639:yki" target="_blank" rel="noopener">Yoke</a>, Yolngu Matha, and Zabana.</p>
+<h3 id="collaborators"><a class="heading-anchor" href="#collaborators">Collaborators</a></h3>
+<p>Primary project collaborators are <a href="https://orcid.org/0000-0003-0960-8859" target="_blank" rel="noopener">Rachel Hendery</a> (Australia, at Western Sydney University) Patrick McConvell (Australia, Australian National University); <a href="https://orcid.org/0000-0002-1690-7542" target="_blank" rel="noopener">Andrew Burrell</a> (Australia, University of Technology Sydney), Simeon Simoff (Western Sydney University), <a href="https://orcid.org/0000-0002-6547-1749" target="_blank" rel="noopener">Laurent Dousset</a> (CREDO, Aix-Marseille Université, France), Antoinette Schapper (CNRS, France), Ali Chalmers-Braithwaite (Australia, University of Technology Sydney), <a href="https://orcid.org/0000-0003-1825-8432" target="_blank" rel="noopener">Billy McConvell</a> (Western Sydney University).</p>
+<p>On some parts of the project we have also collaborated with: <a href="https://orcid.org/0000-0001-9261-8390" target="_blank" rel="noopener">Michael Falk</a> (Western Sydney University/University of Kent), <a href="https://orcid.org/0000-0001-5492-9657" target="_blank" rel="noopener">Danièle Hromek</a> (Budawang tribe of the Yuin nation), Shannon Foster (D’harawal Sydney Saltwater Knowledge Keeper), Anne di Piazza (CREDO, France), Caleb Smith (Western Sydney University), Josephine Paculio (Western Sydney University), Joshua Dib (Western Sydney University), Roger Bernardo (Western Sydney University).</p>
+<h3 id="read-more"><a class="heading-anchor" href="#read-more">Read more</a></h3>
+<p>The project has a <a href="https://github.com/waves-of-words" target="_blank" rel="noopener">a Github repo where project members fork code of final or near-final outputs</a>.</p>
+<p>For some of the project’s results so far, here is a selection of recent project publications:</p>
+<ul class="list">
+<li>Hendery, Rachel &amp; Andrew Burrell. 2020. ‘<a href="https://www.emerald.com/insight/content/doi/10.1108/JD-05-2019-0078/full/html" target="_blank" rel="noopener">Playful interfaces to the archive and the embodied experience of data</a>’ Journal of Documentation.</li>
+<li>Burrell, Andrew &amp; Rachel Hendery. 2019. ‘<a href="https://dl.acm.org/doi/10.1145/3359996.3365052" target="_blank" rel="noopener">Layered Horizons: a Geospatial Humanities Research Platform</a>’ Proceeding VRST '19 25th ACM Symposium on Virtual Reality Software and Technology. Article 111</li>
+<li>Dousset, Laurent, Sejin Park &amp; Georges Guille-Escuret, 2019. <a href="https://www.westernsydney.edu.au/dhrg/digital_humanities/featured/iste.co.uk/book.php?id=1545" target="_blank" rel="noopener">Kinship, Ecology and History: Renewal of conjectures</a>. [Parenté, écologie et histoire: Renouvellement des conjectures] London: ISTE, Wiley.</li>
+<li>Hendery, R., &amp; McConvell, P. (2018). <a href="https://ir.canterbury.ac.nz/handle/10092/15609" target="_blank" rel="noopener">Waves of words: Ancient Asia-Pacific connection with North Australia</a>. <em>Pacific Dynamics</em>, 2(1).</li>
+</ul>
+<p>You can see <a href="https://www.zotero.org/groups/2239358/waves-of-words/collections/GT974RFE" target="_blank" rel="noopener">all our project outputs in our Zotero group</a>.</p>
+
+    <!--<img src="/assets/images/waves-of-words_map.jpg" alt="Map of collaborators and content for the project"/>
+    <p>
+      <strong>Key:</strong>
+      <em>Collaborators:</em> blue. <em>Sources:</em> purple. <em>Map projection:</em>
+      <a href="https://en.wikipedia.org/wiki/Dymaxion_map">Dymaxion</a>.</p>-->
+  </div>
+</article></main>
+
+    <!-- footer -->
+    
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Around DH <small>v1.4.3</small> </a>
+
+        
+
+        <a
+          href="/imprint/"
+          
+          >Imprint</a
+        >
+
+        
+
+        <a
+          href="/privacy/"
+          
+          >Privacy</a
+        >
+
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+        
+        <a href="https://github.com/madrilene/eleventy-excellent" rel="me">
+          
+          <span class="sr-only">github</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+  ></path>
+  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://front-end.social/@lene" rel="me">
+          
+          <span class="sr-only">mastodon</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path 
+    d="M21.887,5.996C21.579,3.682 19.589,1.856 17.232,1.504C16.833,1.445 15.326,1.226 11.834,1.226L11.808,1.226C8.313,1.226 7.565,1.445 7.166,1.504C4.871,1.849 2.779,3.486 2.269,5.83C2.027,6.983 2.001,8.263 2.047,9.436C2.112,11.12 2.125,12.797 2.275,14.475C2.38,15.588 2.56,16.692 2.818,17.779C3.302,19.788 5.257,21.459 7.173,22.138C9.222,22.848 11.429,22.967 13.541,22.48C13.773,22.423 14.002,22.36 14.231,22.287C14.744,22.122 15.345,21.936 15.79,21.611C15.796,21.608 15.8,21.601 15.803,21.595C15.806,21.588 15.81,21.581 15.81,21.571L15.81,19.947C15.81,19.947 15.81,19.934 15.803,19.927C15.803,19.921 15.796,19.914 15.79,19.911C15.783,19.907 15.777,19.904 15.77,19.901L15.751,19.901C14.397,20.229 13.008,20.395 11.619,20.391C9.222,20.391 8.578,19.238 8.395,18.761C8.248,18.346 8.153,17.912 8.114,17.474C8.114,17.468 8.114,17.461 8.117,17.455C8.117,17.448 8.124,17.441 8.13,17.438C8.137,17.435 8.143,17.431 8.15,17.428L8.173,17.428C9.503,17.753 10.87,17.919 12.24,17.919C12.57,17.919 12.897,17.919 13.227,17.909C14.603,17.869 16.055,17.799 17.411,17.531C17.444,17.524 17.48,17.518 17.509,17.511C19.647,17.093 21.681,15.787 21.887,12.479C21.893,12.35 21.913,11.114 21.913,10.981C21.913,10.52 22.06,7.723 21.89,6.002L21.887,5.996Z"
+  ></path>
+  <path
+    d="M6.061,7.288C6.061,6.612 6.594,6.069 7.254,6.069C7.915,6.069 8.447,6.616 8.447,7.288C8.447,7.961 7.915,8.508 7.254,8.508C6.594,8.508 6.061,7.961 6.061,7.288Z"
+    stroke-width="1"
+    fill="currentColor"
+  ></path>
+</svg></div>
+          </a
+          >
+        
+
+        
+        <a href="https://ko-fi.com/lenesaile" rel="me">
+          
+          <span class="sr-only">ko-fi</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 24 24"
+>
+  <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    d="M18 3h1c1.06 0 2.078.527 2.828 1.464C22.578 5.402 23 6.674 23 8s-.421 2.598-1.172 3.536C21.078 12.473 20.061 13 19 13h-1M1 3h17v12.461c0 1.47-.512 2.878-1.423 3.917-.91 1.038-2.146 1.622-3.434 1.622H5.857c-1.288 0-2.523-.584-3.434-1.622C1.512 18.339 1 16.93 1 15.46V3Z"
+  />
+  <path
+    fill="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="1"
+    d="M13.288 8.707a2.431 2.431 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-3.44 0c-.95.939-1 2.527.2 3.736L9.497 16l3.6-3.547c1.2-1.208 1.14-2.797.19-3.736v-.01Z"
+  />
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="http://localhost:8080//feed.xml" rel="alternate" type="application/rss+xml">
+        
+          <span class="sr-only">rss</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M4 11a9 9 0 0 1 9 9"></path>
+  <path d="M4 4a16 16 0 0 1 16 16"></path>
+  <circle cx="5" cy="19" r="1"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+    <!-- youtube if actvated in yaml -->
+    
+  </body>
+</html>
