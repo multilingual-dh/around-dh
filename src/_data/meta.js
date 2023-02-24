@@ -2,7 +2,7 @@ module.exports = {
   url: process.env.URL || 'http://localhost:8080',
   siteName: 'Around DH',
   siteDescription:
-    'Eleventy starter based on the workflow suggested by buildexcellentwebsit.es.',
+    "Celebrating Digital Humanities praxis from across the globe by highlighting the networks of people and sources behind these projects, the tools used, and what the stakes are. ",
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
