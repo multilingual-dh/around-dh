@@ -1,0 +1,44 @@
+---js
+{
+  layout: "base",
+  title: "Around DH",
+
+}
+---
+
+<header class="section spot-color-primary">
+  <div class="section__inner">
+    <div class="wrapper flow region">
+      <h1 class="text-center">{{ title }}</h1>
+    </div>
+  </div>
+  {% include 'svg/divider-pixels.svg' %}
+</header>
+
+<article class="region">
+  <div class="wrapper flow prose">
+    {{ content | safe }}
+  </div>
+</article>
+
+<ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  {% for project in collections.projects | reverse %}
+
+    <li class="card flow overflow-hidden">
+      <h3>
+        <a href="{{ project.url | url }}">{{ project.data.title }}</a>
+      </h3>
+      {% set definedDate = project.date %}
+      {% include "partials/date.njk" %}
+      <p>{{ project.data.description }}</p>
+    </li>
+
+  {% endfor %}
+</ul>
+</article>
+
+<article class="region">
+<div class="wrapper flow prose">
+  <p>Interested in more global DH projects? Travel back in time to <a href="http://arounddh.elotroalex.com/journey/">'Around DH in 80 Days'</a>.</p>
+</div>
+</article>

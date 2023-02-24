@@ -1,0 +1,25 @@
+---
+layout: base
+schema: blog
+preloads:
+  href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
+  as: 'font'
+  type: 'font/woff2'
+  crossorigin: true
+---
+
+<article class="region blog">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    {% set definedDate = date %}
+    {% include "partials/date.njk" %}<br/>
+    {{ author }}
+    <img src ="/assets/images/{{ref}}.jpg" alt="Cover image for {{title}}"/>
+    {{ content | safe }}
+    <!--<img src="/assets/images/{{ref}}_map.jpg" alt="Map of collaborators and content for the project"/>
+    <p>
+      <strong>Key:</strong>
+      <em>Collaborators:</em> blue. <em>Sources:</em> purple. <em>Map projection:</em>
+      <a href="https://en.wikipedia.org/wiki/Dymaxion_map">Dymaxion</a>.</p>-->
+  </div>
+</article>

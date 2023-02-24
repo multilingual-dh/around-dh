@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "citiesallreports",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Western Sydney University", "url": "/en/waves-of-words", "count": "700"}, "geometry": { "type": "Point", "coordinates": [ 150.754, -33.6092 ] } },
+{ "type": "Feature", "properties": { "name": "Australian National University", "url": "/en/waves-of-words", "count": "100"}, "geometry": { "type": "Point", "coordinates": [ 149.11891, -35.27772 ] } },
+{ "type": "Feature", "properties": { "name": "University of Technology Sydney", "url": "/en/waves-of-words", "count": "200"}, "geometry": { "type": "Point", "coordinates": [ 151.1983055, -33.8832376 ] } },
+{ "type": "Feature", "properties": { "name": "University of Kent", "url": "/en/waves-of-words", "count": "100"}, "geometry": { "type": "Point", "coordinates": [ 1.06121, 51.29762 ] } },
+{ "type": "Feature", "properties": { "name": "CREDO", "url": "/en/waves-of-words", "count": "100"}, "geometry": { "type": "Point", "coordinates": [ 5.3557777, 43.2935917 ] } },
+{ "type": "Feature", "properties": { "name": "CNRS", "url": "/en/waves-of-words", "count": "100"}, "geometry": { "type": "Point", "coordinates": [ 2.2639934, 48.8476037 ] } },
+{ "type": "Feature", "properties": { "name": "Yuin nation", "url": "/en/waves-of-words", "count": "100"}, "geometry": { "type": "Point", "coordinates": [ 150.05119, -36.3652 ] } },
+{ "type": "Feature", "properties": { "name": "D’harawal clan", "url": "/en/waves-of-words", "count": "100"}, "geometry": { "type": "Point", "coordinates": [  151, -34 ] } }
+]
+}
